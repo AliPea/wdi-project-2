@@ -6,8 +6,8 @@ const mongoose   = require("mongoose");
 const expressJWT = require("express-jwt");
 
 
-const app        = express();
-const config     = require("./config/config");
+const app           = express();
+const config        = require("./config/config");
 const apiRouter     = require('./config/apiRoutes');
 const webRouter     = require('./config/webRoutes');
 
