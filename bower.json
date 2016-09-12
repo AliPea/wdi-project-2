@@ -1,0 +1,17 @@
+{
+  "name": "outdoorsy-london",
+  "description": "Alicia's second WDI project",
+  "main": "index.js",
+  "authors": [
+    "AliPea <pearseindeas@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AliPea/wdi-project-2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

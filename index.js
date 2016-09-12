@@ -17,7 +17,7 @@ app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
-
+app.use(express.static(`${__dirname}/public`));
 app.use("/api", expressJWT({ secret: config.secret })
   .unless({
       path: [
