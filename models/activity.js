@@ -14,3 +14,12 @@ const activitySchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Activity", activitySchema);
+
+//when click on heart
+
+// let favorite = {
+//   name: activity.name,
+//   ...
+// };
+//
+// user.favorite.push(favorite);

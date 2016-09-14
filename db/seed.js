@@ -58,7 +58,6 @@ const activities = [
     lng: "0.103112",
     type: "hike"
   },
-
   {
     name: "English Countryside Views: Chess Valley",
     image: "http://photos1.meetupstatic.com/photos/event/c/5/4/6/600_400130502.jpeg",
@@ -359,16 +358,86 @@ const activities = [
     lng: "-0.0385467",
     type: "run"
   },
-  // {
-  //   name: "",
-  //   image: "",
-  //   distance: "",
-  //   description: "",
-  //   information: "",
-  //   lat: "",
-  //   lng: "",
-  //   type: "run"
-  // },
+  {
+    name: "The Diana Memorial Run",
+    image: "",
+    distance: "7.2 miles",
+    description: "",
+    information: "http://dynamic-assets.mapmyfitness.com/gb/chelsea-eng/the-diana-memorial-run-route-117187735?host_canon=mapmyrun.com",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
+  {
+    name: "",
+    image: "",
+    distance: "",
+    description: "",
+    information: "",
+    lat: "",
+    lng: "",
+    type: "run"
+  },
 
 ];
 

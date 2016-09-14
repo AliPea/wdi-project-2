@@ -1,30 +1,93 @@
-console.log("LOADED");
+const Outdoorsy = Outdoorsy || {};
 
-const googleMap = googleMap || {};
+Outdoorsy.api_url = "http://localhost:3000/api";
 
-googleMap.api_url = "http://localhost:3000/api";
-
-googleMap.init = function() {
-  console.log("RUNNING");
+Outdoorsy.init = function() {
+  this.apiUrl = "http://localhost:3000/api";
   this.mapSetup();
-  // this.eventListeners();
+  this.eventListeners();
+
+  if (this.getToken()) {
+    this.loggedInState();
+  } else {
+    this.loggedOutState();
+  }
 };
 
-// googleMap.eventListeners = function() {
-//   $('.location').on('click', this.getCurrentLocation);
-//   $('.new').on('click', this.toggleForm);
-//   $('main').on('submit', 'form', this.addActivity);
-// };
-//
-// googleMap.toggleForm = function() {
-//   $('form').slideToggle();
-// };
+Outdoorsy.eventListeners = function() {
+  $('main').on("submit", ".modal form", this.handleForm);
+  // $(".register").on("click", this.register.bind(this));
+  // $(".login").on("click", this.login.bind(this));
+  $(".logout").on("click", this.logout.bind(this));
+  // $(".usersIndex").on("click", this.usersIndex.bind(this));
+};
 
-// googleMap.getCurrentLocation = function() {
+Outdoorsy.handleForm = function(){
+  console.log("working");
+  event.preventDefault();
+
+  let url    = `${Outdoorsy.apiUrl}${$(this).attr("action")}`;
+  let method = $(this).attr("method");
+  let data   = $(this).serialize();
+
+  $('.modal').modal('hide');
+
+  return Outdoorsy.ajaxRequest(url, method, data, (data) => {
+    if (data.token) Outdoorsy.setToken(data.token);
+    Outdoorsy.loggedInState();
+  });
+};
+
+Outdoorsy.ajaxRequest = function(url, method, data, callback){
+  return $.ajax({
+    url,
+    method,
+    data,
+    beforeSend: this.setRequestHeader.bind(this)
+  })
+  .done(callback)
+  .fail(data => {
+    console.log(data);
+  });
+};
+
+Outdoorsy.logout = function() {
+  event.preventDefault();
+  this.removeToken();
+  this.loggedOutState();
+};
+
+Outdoorsy.setRequestHeader = function(xhr, settings) {
+  return xhr.setRequestHeader("Authorization", `Bearer ${this.getToken()}`);
+};
+
+Outdoorsy.setToken = function(token){
+  return window.localStorage.setItem("token", token);
+};
+
+Outdoorsy.getToken = function(){
+  return window.localStorage.getItem("token");
+};
+
+Outdoorsy.removeToken = function(){
+  return window.localStorage.clear();
+};
+
+Outdoorsy.loggedInState = function(){
+  $(".loggedOut").hide();
+  $(".loggedIn").show();
+};
+
+Outdoorsy.loggedOutState = function(){
+  $(".loggedOut").show();
+  $(".loggedIn").hide();
+};
+
+// Outdoorsy.getCurrentLocation = function() {
 //   navigator.geolocation.getCurrentPosition(function(position){
 //     let marker = new google.maps.Marker({
 //       position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-//       map: googleMap.map,
+//       map: Outdoorsy.map,
 //       animation: google.maps.Animation.DROP,
 //       icon: {
 //         url: "http://furtaev.ru/preview/user_on_map_2_small.png",
@@ -32,11 +95,11 @@ googleMap.init = function() {
 //       }
 //     });
 //
-//     googleMap.map.setCenter(marker.getPosition());
+//     Outdoorsy.map.setCenter(marker.getPosition());
 //   });
 // };
 //
-// googleMap.addActivity = function() {
+// Outdoorsy.addActivity = function() {
 //   event.preventDefault();
 //   $.ajax({
 //     method: "POST",
@@ -44,12 +107,12 @@ googleMap.init = function() {
 //     data: $(this).serialize()
 //   }).done(data => {
 //     console.log(data.activity);
-//     googleMap.createMarkerForActivity(null, data.activity);
+//     Outdoorsy.createMarkerForActivity(null, data.activity);
 //     $('form').reset().hide();
 //   });
 // };
 
-googleMap.mapSetup = function() {
+Outdoorsy.mapSetup = function() {
   let canvas = document.getElementById('map-canvas');
   console.log(canvas);
 
@@ -65,17 +128,17 @@ googleMap.mapSetup = function() {
   this.getActivities();
 };
 
-googleMap.getActivities = function(){
+Outdoorsy.getActivities = function(){
   // WILL HAVE TO CHANGE LATER TO HAVE A JWT TOKEN
   return $.get(`${this.api_url}/activities`).done(this.loopThroughActivities.bind(this));
 };
 
-googleMap.loopThroughActivities = function(data) {
+Outdoorsy.loopThroughActivities = function(data) {
   return $.each(data.activities, this.createMarkerForActivity.bind(this));
 };
 
-googleMap.createMarkerForActivity = function(index, activity) {
-  console.log(activity, this);
+Outdoorsy.createMarkerForActivity = function(index, activity) {
+  // console.log(activity, this);
 
   let latlng = new google.maps.LatLng(activity.lat, activity.lng);
 
@@ -91,18 +154,18 @@ googleMap.createMarkerForActivity = function(index, activity) {
   this.addInfoWindowForActivity(activity, marker);
 };
 
-googleMap.addInfoWindowForActivity = function(activity, marker) {
+Outdoorsy.addInfoWindowForActivity = function(activity, marker) {
   google.maps.event.addListener(marker, 'click', () => {
     if (typeof this.infowindow != "undefined") this.infowindow.close();
 
     this.infowindow = new google.maps.InfoWindow({
       content: `
-                <div class="info">
-                  <img src="${ activity.image}">
-                  <h3>${ activity.name }</h3>
-                  <p>${ activity.description}</p>
-                </div>
-               `
+      <div class="info">
+      <img src="${ activity.image}">
+      <h3>${ activity.name }</h3>
+      <p>${ activity.description}</p>
+      </div>
+      `
     });
 
     this.infowindow.open(this.map, marker);
@@ -110,4 +173,4 @@ googleMap.addInfoWindowForActivity = function(activity, marker) {
   });
 };
 
-$(googleMap.init.bind(googleMap));
+$(Outdoorsy.init.bind(Outdoorsy));

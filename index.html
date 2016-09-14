@@ -23,13 +23,105 @@
 <body>
   <nav>
     <ul>
-      <li><a class="register" href="#">Register</a></li>
-      <li><a class="login" href="#">Login</a></li>
+      <ul class="loggedOut">
+        <li><a class="register" href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
+        <li><a class="login" href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
+      </ul>
+      <ul class="loggedIn">
+        <li><a href="#" class="logout">Logout</a></li>
+      </ul>
     </ul>
   </nav>
   <h1>Outdoorsy London</h1>
   <main>
     <div id="map-canvas"></div>
-  </main>
-</body>
-</html>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Register</h4>
+          </div>
+          <div class="input">
+            <div class="container">
+              <form action="/register" method="post">
+                <h3>Sing up to access the best outdoorsy activities in London!</h3>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                  <div class="col-sm-10">
+                    <input type="text" name="user[username]" class="form-control" id="inputEmail3" placeholder="Username">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" name="user[email]" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" name="user[password]" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password Confirmation</label>
+                  <div class="col-sm-10">
+                    <input type="password" name="user[passwordConfirmation]" class="form-control" id="inputPassword3" placeholder="Password">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="input">
+              <div class="container">
+                <form action="/login" method="post">
+                  <h3>Login</h3>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+                    <div class="col-sm-10">
+                      <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="password" name="password" class="form-control" id="inputEmail3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+  </html>
