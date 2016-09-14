@@ -1,5 +1,71 @@
+$red:         #de3828;
+$brown:       #4a3111;
+$lightBrown:  #927c60;
+$white:       white;
+$grey:        #f7f7f7;
+$black:       black;
+$yellow:      #f4b443;
+$header-font: 'Arvo', serif;
+$base-font:   'Slabo 27px', serif;
+
+body {
+  background: $grey;
+  font-size: 13px;
+  font-family: $base-font;
+}
+
+header {
+  padding: 10px 0;
+  background: $red;
+  background-image: url("../images/fabric.png");
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-default {
+  background: none;
+  color: $white;
+  border-top: 1px dashed $white;
+  border-bottom: 1px dashed $white;
+  border-left: 0;
+  border-right: 0;
+
+  .navbar-nav > li > a {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .navbar-brand {
+    color: $white;
+    font-family: $header-font;
+    font-weight: 900;
+    font-size: 24px;
+
+    img {
+      max-height: 40px;
+      vertical-align: top;
+      display: inline-block;
+      margin-top: -10px;
+      margin-right: 8px;
+    }
+  }
+
+  .navbar-toggle {
+    background: 0;
+    color: black;
+    border: 0;
+
+    .icon-bar {
+      background-color: $white;
+    }
+  }
+}
+
+
 #map-canvas {
   height: 80vh;
   width: 100%;
-  background-color: black;
 }

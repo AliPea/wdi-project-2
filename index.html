@@ -3,36 +3,48 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <title>OL</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Lato:300,400,700" rel="stylesheet">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsiPLSWrO3qPHUn6xYV15flLgecmk6NCA" charset="utf-8"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Arvo:700|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <ul class="loggedOut">
-        <li><a class="register" href="#" data-toggle="modal" data-target="#registerModal">Register</a></li>
-        <li><a class="login" href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
-      </ul>
-      <ul class="loggedIn">
-        <li><a href="#" class="logout">Logout</a></li>
-      </ul>
-    </ul>
-  </nav>
-  <h1>Outdoorsy London</h1>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="/images/badge.png">Outdoorsy London</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" class="register loggedOut" data-toggle="modal" data-target="#registerModal">Register</a></li>
+            <li><a href="#" class="login loggedOut" data-toggle="modal" data-target="#loginModal">Login</a></li>
+            <li><a href="#" class="logout loggedIn">Logout</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </header>
+
   <main>
     <div id="map-canvas"></div>
 
@@ -47,81 +59,65 @@
             <h4 class="modal-title">Register</h4>
           </div>
           <div class="input">
-            <div class="container">
-              <form action="/register" method="post">
-                <h3>Sing up to access the best outdoorsy activities in London!</h3>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
-                  <div class="col-sm-10">
-                    <input type="text" name="user[username]" class="form-control" id="inputEmail3" placeholder="Username">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" name="user[email]" class="form-control" id="inputEmail3" placeholder="Email">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" name="user[password]" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password Confirmation</label>
-                  <div class="col-sm-10">
-                    <input type="password" name="user[passwordConfirmation]" class="form-control" id="inputPassword3" placeholder="Password">
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
-                </div>
-              </form>
-            </div>
+            <form action="/register" method="post">
+              <h3>Sing up to access the best outdoorsy activities in London!</h3>
+              <div class="form-group">
+                <label for="inputEmail3">Username</label>
+                <input type="text" name="user[username]" class="form-control" id="inputEmail3" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail3">Email</label>
+                <input type="email" name="user[email]" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3">Password</label>
+                <input type="password" name="user[password]" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3">Password Confirmation</label>
+                <input type="password" name="user[passwordConfirmation]" class="form-control" id="inputPassword3" placeholder="Password">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
 
-      <!-- Login Modal -->
-      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <h4 class="modal-title">Login</h4>
-            </div>
-            <div class="input">
-              <div class="container">
-                <form action="/login" method="post">
-                  <h3>Login</h3>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
-                    <div class="col-sm-10">
-                      <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                      <input type="password" name="password" class="form-control" id="inputEmail3" placeholder="Password">
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
-                  </div>
-                </form>
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Login</h4>
+          </div>
+          <div class="input">
+            <form action="/login" method="post">
+              <h3>Login</h3>
+              <div class="form-group">
+                <label for="inputEmail3">Username</label>
+                <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
               </div>
-            </div>
+              <div class="form-group">
+                <label for="inputEmail3">Email</label>
+                <input type="password" name="password" class="form-control" id="inputEmail3" placeholder="Password">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-  </body>
-  </html>
+</body>
+</html>
