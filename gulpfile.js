@@ -139,8 +139,8 @@ gulp.task('html', () => {
 gulp.task("watch", () => {
 	  livereload.listen();
     gulp.watch('./index.html', ['html']);
-    gulp.watch(`${src}/**/*.js`, ['bower', 'scripts']);
-	  gulp.watch(`${src}/**/*.scss`, ['sass']);
+    gulp.watch(`${src}/**/*.js, !${src}/js/_bower.js`, ['scripts']);
+	  gulp.watch(`${src}/**/*.scss, !${src}/js/_bower.scss`, ['sass']);
 });
 
 gulp.task("default", [

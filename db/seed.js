@@ -10,7 +10,7 @@ Activity.collection.drop();
 const activities = [
   {
     name: "Lee Valley Regional Park, Art Views",
-    image: "https://i0.wp.com/upload.wikimedia.org/wikipedia/commons/5/55/River_lee_Country_Park.jpg",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/06/43/f4/4d/lee-valley-regional-park.jpg",
     distance: "6 miles",
     description: "Best hike for Art views. Walk through the wonderful Lea Valley passing unique art sculptures along the way",
     information: "https://www.visitleevalley.org.uk/en/content/cms/outdoors/walks-walking/walking-routes/ware-to-waltham-abbey/artworks-route-three/",
@@ -20,7 +20,7 @@ const activities = [
   },
   {
     name: "The 7 Sisters",
-    image: "http://photos3.meetupstatic.com/photos/event/9/a/a/6/600_447579590.jpeg",
+    image: "http://www.southeasteventphotography.com/wp-content/uploads/2010/06/South-East-Photography-Cottages-at-Cuckmere-Haven1.png",
     distance: "13.8 miles",
     description:"This classic cliff-top walk – one of the finest coastal walks in England – affords stunning (and very famous) views of the white cliffs of the Seven Sisters, and the renowned Beachy Head, before ending in the elegant seafront town of Eastbourne. There is quite a lot of climbing and descending on the walk – indeed, apart from the section around Cuckmere Haven and the finish along the Eastbourne seafront, almost none of the route is flat – but somehow in the grandeur of the scenery the effort is not noticed.",
     information:"http://www.walkingclub.org.uk/book_2/walk_28/",
@@ -30,7 +30,7 @@ const activities = [
   },
   {
     name: "Ockley to Leith Hill",
-    image:  "https://www.google.co.uk/search?q=Ockley+and+Leith+Hill&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiz-ZTzgozPAhUJBcAKHQSvAkMQ_AUICSgC&biw=1280&bih=676#tbm=isch&q=Ockley+and+Leith+Hill+high+point&imgrc=zW1qU6N6QtZHkM%3A",
+    image: "http://www.walkingforhappiness.co.uk/wp-content/uploads/2011/01/193789_cc722d7b.jpg",
     distance: "7 miles",
     description: "Climb up to the highest point in the south east, taking on Leith Hill from its steeper south side. This pretty walk takes you through green meadows, past ye olde cottages and it has some helpful built-in steps for the final push.",
     information: "http://www.fancyfreewalks.org/Surrey/Ockley-LeithHill.pdf",
@@ -40,7 +40,7 @@ const activities = [
   },
   {
     name: "Vinyard views, Leatherhead to Dorking",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/cb/Mole_Gap_Trail_-_geograph.org.uk_-_168233.jpg",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/08/4a/6d/57/denbies-vineyard-restaurant.jpg",
     distance: "6 miles",
     description: "Pleasant short walk through the Surrey countryside",
     information: "http://www.gps-routes.co.uk/routes/home.nsf/RoutesLinksWalks/mole-gap-trail-walking-route",
@@ -50,7 +50,7 @@ const activities = [
   },
   {
     name: "Essex Walks Oak Trail Epping Forest Walking Route",
-    image: "http://www.walksandwalking.com/wp-content/uploads/2012/10/Walks-And-Walking-Essex-Walks-The-Oak-Trail-Epping-Forest-Walking-Route-Autumn-Path.jpg",
+    image: "http://www.movebubble.com/wp-content/uploads/2015/03/Walking-In-November.jpg",
     distance: "7 miles",
     description: "Epping Forest offers one of the most awesome woodland hikes you can enjoy near London. The route gives you views of wonderful and historic beech pollards, woodland pasture, Ambresbury Banks, which is the remains of an Iron Age Hill Fort, and a deer sanctuary, which is home to black fallow deer. ",
     information: "http://www.walksandwalking.com/2012/10/walks-and-walking-essex-walks-oak-trail-epping-forest-walking-route/",
@@ -60,7 +60,7 @@ const activities = [
   },
   {
     name: "English Countryside Views: Chess Valley",
-    image: "http://photos1.meetupstatic.com/photos/event/c/5/4/6/600_400130502.jpeg",
+    image: "http://www.tubewalker.com/images/metropolitan/chorleywood_to_amersham_and_chesham/570/chorleywood_to_amersham_and_chesham087.jpg",
     distance: "10 miles",
     description: "This pretty walk takes you through the Chilterns from Rickmansworth to Chesham following the River Chess with some lovely villages and views of this Area Of Outstanding Natural Beauty along the way.",
     information: "http://www.chilternsaonb.org/ccbmaps/381/137/chess-valley-walk.html",
@@ -80,7 +80,7 @@ const activities = [
   },
   {
     name: "Hastings: Castle View",
-    image: "http://cdn.coresites.factorymedia.com/mpora_new/wp-content/uploads/2015/11/iStock_000013867042_Small-oversnap.jpg",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/09/2c/cb/fc/hastings-castle.jpg",
     distance: "5.9 miles",
     description: "This walk starts at Hastings Station and takes you through Hastings Old Town and along the seafront at Rock-A-Nore. The walk continues along a steep coastal path, in Hastings Country Park with the East Hill funicular railway to your right, and towards Fairlight Glen. Head towards the sign ‘Fairlight picnic site 1 mile, North’s Seat 1.25 miles’ and turn left. After passing some woodland on a single path, you will pass the house of Titus Oates (a notorious fraudster), entrance to Clements Caves and the ruins of Hastings Castle.",
     information: "http://www.wegoplaces.me/walks-near-london/",
@@ -90,7 +90,7 @@ const activities = [
   },
   {
     name: "Stonor Circular Via Henley: River Views",
-    image: "http://photos1.meetupstatic.com/photos/event/2/3/5/c/600_418149052.jpeg",
+    image: "http://photos4.meetupstatic.com/photos/event/4/3/0/600_418141072.jpeg",
     distance: "13.6 miles",
     description: "Henley is normally thought of as a riverside town but, as this walk demonstrates, it is also on the southern edge of the Chiltern Hills, a charming area of hidden valleys, mixed wood and farmland, and largely gentle slopes (the main walk has one substantial steep hill after lunch, however). The walk takes you up one side and down the other of the long valley leading up to Stonor, with plenty of charming views over hill en route.",
     information: "http://www.walkingclub.org.uk/book_2/walk_06/",
@@ -100,7 +100,7 @@ const activities = [
   },
   {
     name: "Petts Wood in Bromley",
-    image: "http://www.wegoplaces.me/wp-content/uploads/2015/03/petts-wood-bromley-862x647.jpg",
+    image: "http://s0.geograph.org.uk/geophotos/02/52/73/2527384_c40e65f7.jpg",
     distance: "4 miles",
     description: "Walk the borough of Bromley through woodland and meadows",
     information: "http://www.wegoplaces.me/wp-content/uploads/2015/03/PETTS_WOOD.pdf",
@@ -110,7 +110,7 @@ const activities = [
   },
   {
     name: "Ashridge Estate in Birkhamstead",
-    image: "https://plus.google.com/photos/photo/102038449389036440445/6292822435744072162",
+    image: "http://www.greendayout.co.uk/wp-content/uploads/media/k2/items/cache/8b07d68e197daf2ec649a33eed7b1e00_L.jpg",
     distance: "5.9 miles",
     description: "Ashridge Estate offers beautiful woodland trails. In the autumn you can find orange and yellow colours all around. In the spring, there are stunning clusters of bluebells. Not to mention, a wide variety of wildlife throughout the seasons such as deer and birds. This walk is about 6 miles and starts at the Ashridge Estate Visitor Centre. This is a moderate stroll through the woods that is clearly marked. You can learn more about Ashridge Estate here.",
     information: "https://www.nationaltrust.org.uk/ashridge-estate",
@@ -120,7 +120,7 @@ const activities = [
   },
   {
     name: "Ashtead Common, Epsom Common & Princes Coverts in Surrey",
-    image: "http://i4.getsurrey.co.uk/incoming/article9303895.ece/ALTERNATES/s615b/leaf-hill-2.jpg",
+    image: "http://i4.getsurrey.co.uk/incoming/article10496121.ece/ALTERNATES/s615b/TM417328.jpg",
     distance: "4.6 miles",
     description: "This is an easy route through the Ashtead Common National Nature Reserve, Epsom Common and the Crown Estates woodland of Prince’s Coverts. You can access the nature reserve from the north side of Ashtead station. You will see well marked hiking trails. This route is under 5 miles in length. You might want to stop by a pub by the A243 (The Star, Malden Rushett).",
     information: "http://about-britain.com/maps/ashstead-epsom.pdf",
@@ -130,7 +130,7 @@ const activities = [
   },
   {
     name: "Ashridge & Ivinghoe Beacon in Hertfordshire",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Ivinghoe_Beacon_seen_from_The_Ridgeway.jpg",
+    image: "http://www.petes-walks.co.uk/Ashridge%20Estate%20Boundary%20Trail/aeb_frame_page.JPG",
     distance: "9 miles",
     description: "This walk near Berkhamstead is a circular walk with a few pretty viewpoints along the way. The most notable viewpoint being the Ivinghoe Beacon.",
     information: "http://about-britain.com/maps/ashridge-walk.pdf",
@@ -140,7 +140,7 @@ const activities = [
   },
   {
     name: "Cliveden Green Walking Trail in Maidenhead",
-    image: "http://www.wegoplaces.me/wp-content/uploads/2015/03/cliveden-esetate-lavendar-862x407.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Cliveden_Green_Drive_-_geograph.org.uk_-_719794.jpg",
     distance: "2.3 miles",
     description: "This walk offers you wonderful views over the River Thames as well as the pleasure of walking through Cliveden’s country estate. The Cliveden Estate and Gardens is open daily for most of the year. Find woodlands and views of the countryside.",
     information: "https://www.nationaltrust.org.uk/cliveden/trails/cliveden-green-walking-trail",
@@ -160,7 +160,7 @@ const activities = [
   },
   {
     name: "Box Hill to Leatherhead",
-    image: "http://www.wegoplaces.me/wp-content/uploads/2015/03/box-hill-viewpoint-862x572.jpg",
+    image: "http://photos3.meetupstatic.com/photos/event/2/1/f/f/600_432788703.jpeg",
     distance: "7.1 miles",
     description: "This walk gets its name from the box trees along the way. However, there are also yew, beech and oak trees that can be seen along the path. This route involves crossing the River Mole on stepping stones. You might have to make a detour if these are under water! After crossing the river, head up the steps on the North Downs Way to the top of Box Hill where you will get a nice view of the valley. This route then takes you through woodland, to Juniper Top, and up White Hill onto Mickleham Downs. At this point you might want to stop for lunch in Mickleham at one of the pubs listed below. Finally, head back along the River Mole valley, through Norbury Park and into the centre of Leatherhead. You should expect two steep climbs – one at Box Hill and the next at White Hill.",
     information: "http://www.walkingclub.org.uk/book_1/walk_49/index.shtml",
@@ -170,7 +170,7 @@ const activities = [
   },
   {
     name: "Pluckley Circular in Kent",
-    image: "https://farm8.staticflickr.com/7001/6703143527_4c64edc229_b.jpg",
+    image: "http://l7.alamy.com/zooms/4a890e9cfa65470f8b16e749f0bbb20b/people-walking-on-the-greensand-way-path-through-apple-orchards-with-cwhwnn.jpg",
     distance: "6.8 miles",
     description: "This walk takes you past small farms, timber-framed houses, pastures, apple orchards and ancient oaks. This route is almost completely flat with very gentle gradients. Later on in the walk you get a spectacular view across the plains of the Low Weald. In summer months there are loads of wild-flowers, gardens in bloom and abundant fruit hanging from trees in the orchards. You might like to stop by the Dering Arms near Pluckley station. This was a former hunting lodge that is now an award-winning pub with wonderful seafood. If you want to stop walking earlier, you can stop at the Swan Inn where you can catch a bus to Ashford.",
     information: "http://www.wegoplaces.me/walks-near-london/#16",
@@ -200,7 +200,7 @@ const activities = [
   },
   {
     name: "Guildford to Chilworth in Surrey",
-    image: "https://chilworth2gether.files.wordpress.com/2013/11/swing-bridge-p2.jpg",
+    image: "http://s0.geograph.org.uk/photos/10/02/100245_0c1cf7dd.jpg",
     distance: "4 miles",
     description: "This route takes you through hidden valleys, ancient woodlands and pretty farmland below the Downs. You can start the walk by stopping at Guildford Castle and admiring the views over the town from the top of the tower. The walk begins with a climb out of Guildford and into Pewley Down. You will find a concrete plinth commemorating the purchase of Pewley Down in 1920 and as a memorial to those who died in World War 1. ",
     information: "",
@@ -220,7 +220,7 @@ const activities = [
   },
   {
     name: "The Polesden Lacey ‘Big Walk’ in Dorking",
-    image: "https://www.nationaltrust.org.uk/images/1431730261235-estatepolesdenlacey.jpg",
+    image: "http://www.theaa.com/travel/pictures/8243_4.jpg",
     distance: "4.2 miles",
     description: "This walk is rich in history since it goes through the 1,400 acre estate of the Polesdon Lacey House with land dating back to Roman Times. There are amazing views over the Surrey Hills. This is a challenging hike that takes you into the heart of Ranmore Common, past working farms and ancient woodlands.",
     information: "https://www.nationaltrust.org.uk/polesden-lacey/trails/the-polesden-lacey-big-walk",
@@ -230,7 +230,7 @@ const activities = [
   },
   {
     name: "The Park Circular Walk at Ankerwycke",
-    image: "http://www.wegoplaces.me/wp-content/uploads/2015/03/ankerwycke-yew-tree-862x771.jpg",
+    image: "http://www.discoverbritainmag.com/wp-content/uploads/2014/05/1.3590205-image-2282550758.jpg",
     distance: ".6 miles",
     description: "This is a very leisurely stroll through the park at Ankerwycke. The path is generally flat and it is perfect for a relaxed Sunday afternoon excursion. This walk takes you across pretty meadows. Enjoy spotting woodpeckers, dragonflies or a carpet of snowdrops in the spring! The most fascinating part of this walk is that you will find a 2,000 year-old Ankerwycke Yew at the end of the walk.",
     information: "https://www.nationaltrust.org.uk/runnymede/trails/the-park-circular-walk-at-ankerwycke-runnymede",
@@ -240,7 +240,7 @@ const activities = [
   },
   {
     name: "Regents Park & Primrose Hill",
-    image: "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/primrose-hill/_gallery/Park-visitors-to-Primrose-Hill.jpg/w_992.jpg",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/02/27/e1/88/the-view-from-primrose.jpg",
     distance: "2.1 miles",
     description: "At the York Bridge entrance, heading west around the park, before turning off at Ormonde Terrace for a lap around Primrose Hill and back into the park.",
     information: "Escape the office at 2pm when stress levels in the office are reaching peak breakdown, by the time you're thundering back down Primrose Hill all your troubles will have been forgotten (and replaced by a burning in your calves, thighs and feet).",
@@ -270,7 +270,7 @@ const activities = [
   },
   {
     name: "The Abandoned Railway Through Parkland Walk",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Parkland_Walk.JPG",
+    image: "http://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzI3Zjc2YzFlMjhhYzMwNDU5NF8zNTA3OTI2NjYyXzU0MTI4ZjkxM2ZfYi5qcGciXSxbInAiLCJ0aHVtYiIsIngzOTBcdTAwM2UiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgOTEgLWF1dG8tb3JpZW50Il1d",
     distance: "5 miles",
     description: "“The Parkland Walk follows a railway line that was abandoned in the 1970s and turned into a woodland. There are sculptures along the route, plus some very rare trees and plants and, at one point, the platforms of a long-abandoned station,” says Simon Freeman of simonfreeman.co.uk.",
     information: "Best time of day: Early afternoon when the trees provide shade from the overhead sun. Night time runs are best avoided as it can get slightly eeire when the sun goes down.",
@@ -290,7 +290,7 @@ const activities = [
   },
   {
     name: "The East London Canal Run",
-    image: "http://theresident.wpms.greatbritishlife.co.uk/wp-content/uploads/sites/10/2015/01/Regents-Canal.jpg",
+    image: "http://i.imgur.com/rxnsk3V.jpg",
     distance: "13 miles",
     description: "Follow Regents Canal east towards Limehouse Basin. Then take the Limehouse Cut past the Olympic Park and around the Hackney Marshes before circling back to Angel.",
     information: "Best time of day: Head out on a weekend morning in time for sunrise and you’ll share the route with a handful of like-minded early rising runners.",
@@ -300,7 +300,7 @@ const activities = [
   },
   {
     name: "The Cross-Capital Riverside Route",
-    image: "",
+    image: "http://i.telegraph.co.uk/multimedia/archive/03274/CE8G8H_3274094b.jpg",
     distance: "up to 36 miles!",
     description: "A (very) long run along the Thames from Woolwich to Richmond Park. One for the committed.",
     information: "Best time of day: Early morning or late at night.",
@@ -309,8 +309,8 @@ const activities = [
     type: "run"
   },
   {
-    name: "River Thames Sightseeing Tour",
-    image: "http://www.e-architect.co.uk/images/jpgs/london/st_pauls_cathedral_nw080609_1.jpg",
+    name: "River Thames Sightseeing Run",
+    image: "http://digital-photography-school.com/wp-content/uploads/2012/06/StPauls3.jpg",
     distance: "5.9 miles",
     description: "This run along the Thames takes in some of the most popular sights London has to offer, including the Tower of London, Tower Bridge, the London Eye, Big Ben and the Houses of Parliament. It is completely flat and mainly along the waterfront thus avoiding some street traffic. This route is best run early in the morning or in the winter to avoid heavy tourist traffic. You’ll want to plan an easy run so you can take your time to enjoy the historic landmarks and stop for pictures.",
     information: "https://www.strava.com/local/uk/london/running/routes/255",
@@ -319,8 +319,8 @@ const activities = [
     type: "run"
   },
   {
-    name: "Escape the City Thames Run",
-    image: "http://www.bbc.co.uk/staticarchive/65459bc7af9e03dc11da73d697d4d216c92847fc.jpg",
+    name: "City Thames Run",
+    image: "http://wikitravel.org/upload/shared//thumb/3/35/Millennium_Bridge.jpeg/300px-Millennium_Bridge.jpeg",
     distance: "12.3 miles",
     description: "Running the Thames path away from Central London you will slowly see the city melt away as you run alongside pretty wooded parks. In some places the path changes from pavement to dirt, providing some relief for the joints. You can run as far as you like and take the train back to the start. We selected Richmond as our finish where you can have a bite to eat before you take the tube back.",
     information: "https://www.strava.com/local/uk/london/running/routes/256",
@@ -340,7 +340,7 @@ const activities = [
   },
   {
     name: "Richmond Park",
-    image: "http://nathan-harrison.com/route/wp-content/uploads/2010/10/Richmond-Park-005.jpg",
+    image: "http://blondietravelblog.com/wp-content/uploads/2011/11/richmond-park.jpg",
     distance: "7.2 miles",
     description: "Richmond Park, the largest of the Royal Parks, is a countryside treasure within the city of London. A short trip from central London has you running on hilly dirt trails through forests and fields. The most popular route in Richmond Park is the perimeter loop on the Tamsin Trail but a network of trails offer countless options. If you venture in to the heart of the park you will likely meet some of the deer that live there. Toilets, water fountains and cafes are plentiful, making Richmond Park the ideal place for any type of run. Our route starts and finishes at the Roehampton Gate where you will find a café for a post-run snack. For a more formal lunch try the Pembroke Lodge.",
     information: "https://www.strava.com/local/uk/london/running/routes/258",
@@ -350,7 +350,7 @@ const activities = [
   },
   {
     name: "East London Towpaths",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Regents_Canal,_London,_England_-Islington_tunnel-21March2010.jpg",
+    image: "http://www.fluidnetwork.co.uk/gfx/venues/20613/towpath_cafe_restaurant_cafe_regent_canal_london.jpg",
     distance: "6.2 miles",
     description: "This mostly traffic-free, flat, paved route takes you on a tour of East London via four different towpaths along London’s historic canals – the Limehouse Cut, River Lea, Hertford Union and Regent's Canals. Starting from the redeveloped Limehouse Basin you will run past narrowboats and locks, over and under bridges and even get a peek at the Olympic Park. You’ll find a variety of scenery along your way from industrial buildings to manicured parks. Highlights include the floating towpath on the Limehouse Cut, the Olympic Stadium, Victoria Park, and Mile End Park. You might try a detour through the meandering paths of Mile End Park or extend this route by continuing along the Thames.",
     information: "https://www.strava.com/local/uk/london/running/routes/260",
@@ -360,85 +360,117 @@ const activities = [
   },
   {
     name: "The Diana Memorial Run",
-    image: "",
+    image: "http://blog.hassle.com/wp-content/uploads/2015/07/DogBuddy-Blog-Dog-friendly-Park-in-London-Kensington-Gardens-e1437143150335.jpg",
     distance: "7.2 miles",
-    description: "",
+    description: "This is a way-marked route (look for the rose brass plates in the pavement) built in honour of the former Princess of Wales. It takes in the big four inner city parks of Kensington Gardens, Hyde Park, Green Park and St James’s Park. Perfect for the visiting runner who wants to nab selfies in front of the palaces and memorials.",
     information: "http://dynamic-assets.mapmyfitness.com/gb/chelsea-eng/the-diana-memorial-run-route-117187735?host_canon=mapmyrun.com",
-    lat: "",
-    lng: "",
+    lat: "51.5029658",
+    lng: "-0.1549117",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Top of the Town",
+    image: "http://www.wuking.com/files/guia/art-trafalgar-square-londres.jpg",
+    distance: "7.7 miles",
+    description: "Run to Trafalgar Square and then follow Charing Cross and Tottenham Court Roads north to reach Euston Road. Turn left to find Regent’s Park and run through the park, on its eastern side. Cross the canal and head up to the top of Primrose Hill. Enjoy the panoramic view and jog back down through the western side of Regent’s Park. Follow Portland Place then Regent Street back to Trafalgar Square and home to Westminster Palace.",
+    information: "http://www.telegraph.co.uk/men/active/11542966/best-running-routes-london.html",
+    lat: "51.5007146",
+    lng: "-0.1432313",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Tour of Southwark",
+    image: "http://assets.ecenglish.com/blogs/uploads/sites/36/2015/09/Big-Ben-600x400.jpg",
+    distance: "9.8 miles",
+    description: "Venture south of the river by following the Thames Path on the South Bank all the way past Tower Bridge and through the Dickensian alleys and docks of Bermondsey. Leave the river at the King’s Stairs Gardens, running south through the leafy avenues of Southwark Park. Connect east through Burgess Park and on to Kennington Park and eventually past The Oval to Vauxhall Bridge. Cross the Thames here and make your way back to the start.",
+    information: "http://www.telegraph.co.uk/men/active/11542966/best-running-routes-london.html",
+    lat: "51.5007292",
+    lng: "-0.1268141",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Two bridges",
+    image: "https://secure4.spiderscope.com/vs/2829b/content/gallery/24_z.jpg",
+    distance: "3.4 miles",
+    description: "Run north to either of the Golden Jubilee Bridges (they sit either side of the Hungerford Rail Bridge). Cross over to the South Bank and continue running east till you reach the Tate Modern. Take the Millennium Bridge back over to the north bank and follow the Thames Path back to your starting point.",
+    information: "http://www.telegraph.co.uk/men/active/11542966/best-running-routes-london.html",
+    lat: "51.5007292",
+    lng: "-0.1268141",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Canal and River run",
+    image: "https://static.mycitytrip.com/upload/images/957/600x400_palace-of-westminster-big-ben.jpg",
+    distance: "17.8 miles",
+    description: "The lengthiest run on this list is also the most serene (although it's not recommended for marathoners in taper week due to the length of the route).Head east along the north bank, following the Thames Path signs all the way to Limehouse Basin. Follow Regent’s Canal north and then west to Little Venice and south to Paddington Station. Then follow the streets further south to Hyde Park and use the Royal Parks to connect back to your start point.",
+    information: "http://www.telegraph.co.uk/men/active/11542966/best-running-routes-london.html",
+    lat: "51.5022558",
+    lng: "-0.1253698",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Westminster to Battersea Loop",
+    image: "http://www.venuesearchlondon.com/media/image/12265/m/2.jpg",
+    distance: "6.6 miles",
+    description: "This run is a simple matter of following the Thames Path on the river’s south bank all the way southwest to Battersea Park. At the far end of the park, cross to the north bank via the impressive Albert Bridge. Then follow the waterside pavement all the way home whilst admiring the vistas over the river to the monolithic Battersea Power Station and glitzy apartments.",
+    information: "http://www.telegraph.co.uk/men/active/11542966/best-running-routes-london.html",
+    lat: "51.4994794",
+    lng: "-0.1269979",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "Dollis Valley Grenn Run",
+    image: "https://www.coolcamping.co.uk/system/images/2755/lunsford-farm-feather-down-farm-medium.jpg",
+    distance: "13.2 miles",
+    description: "Most of this route follows the Dollis Valley Green Walk (look for the green discs and the wooden finger posts). However, to connect easily to Tube stations we have added on an extra 2.3mi at the start (from Edgware Station) and have diverted the final section to follow the Capital Ring trail directly to East Finchley Station rather than on Hampstead Heath.",
+    information: "http://www.runnersguidetolondon.co.uk/dollis-valley-green-walk.html",
+    lat: "51.61366",
+    lng: "-0.5550514",
     type: "run"
   },
   {
-    name: "",
-    image: "",
-    distance: "",
-    description: "",
-    information: "",
-    lat: "",
-    lng: "",
+    name: "East London Maritime",
+    image: "http://i0.wp.com/lovewapping.org/wp-content/uploads/2015/04/MB807-28-featured.jpg",
+    distance: "6.6 miles",
+    description: "It starts in the Canary Wharf business district, which was once a bustling port, heads south through the interior of the Isle of Dogs to Greenwich on the south bank of the Thames (via the foot tunnel). Then it comes back following a small section of the 184-mile Thames Path. ",
+    information: "http://www.runnersguidetolondon.co.uk/east-london-maritime.html",
+    lat: "51.503217",
+    lng: "-0.0213506",
     type: "run"
   },
-
+//   {
+//     name: "Mile End Climbing Wall",
+//     image: "https://pbs.twimg.com/media/CPw7CQgW8AAn44e.jpg",
+//     description: "Mile End Climbing Wall offers bouldering, top-rope climbing and lead climbing, with around 16,000 square feet of climbing surface. It has its own route setting blog to let climbers know when changes are on the way. It also houses the ‘Monkey House’, where bouldering routes cross the ceiling and require plenty of hanging around.",
+//     information: "http://londonist.com/2014/03/where-to-go-climbing-the-best-centres-in-london",
+//     lat:
+//     lng:
+//     type: "rock-climb"
+//
+//   }
+//   {
+//     name:
+//     image:
+//     description:
+//     information:
+//     lat:
+//     lng:
+//     type: "rock-climb"
+//
+//   }
+//   {
+//     name:
+//     image:
+//     description:
+//     information:
+//     lat:
+//     lng:
+//     type: "rock-climb"
+//
+//   }
+//
+//
+//
 ];
 
 activities.forEach(activity => {

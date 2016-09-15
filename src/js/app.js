@@ -15,22 +15,19 @@ Outdoorsy.init = function() {
 };
 
 Outdoorsy.eventListeners = function() {
-  $('main').on("submit", ".modal form", this.handleForm);
-  // $(".register").on("click", this.register.bind(this));
-  // $(".login").on("click", this.login.bind(this));
+  $('.modal form').on("submit", this.handleForm);
   $(".logout").on("click", this.logout.bind(this));
   // $(".usersIndex").on("click", this.usersIndex.bind(this));
 };
 
 Outdoorsy.handleForm = function(){
-  console.log("working");
   event.preventDefault();
 
   let url    = `${Outdoorsy.apiUrl}${$(this).attr("action")}`;
   let method = $(this).attr("method");
   let data   = $(this).serialize();
 
-  $('.modal').modal('hide');
+  $($(this).parents(".modal")).modal("hide");
 
   return Outdoorsy.ajaxRequest(url, method, data, (data) => {
     if (data.token) Outdoorsy.setToken(data.token);
@@ -120,7 +117,7 @@ Outdoorsy.mapSetup = function() {
     zoom: 13,
     center: new google.maps.LatLng(51.506178,-0.088369),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#87b5db"},{"visibility":"on"}]}]
   };
 
   this.map = new google.maps.Map(canvas, mapOptions);
@@ -180,5 +177,6 @@ Outdoorsy.addInfoWindowForActivity = function(activity, marker) {
     this.map.setCenter(marker.getPosition());
   });
 };
+
 
 $(Outdoorsy.init.bind(Outdoorsy));

@@ -11,17 +11,21 @@
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsiPLSWrO3qPHUn6xYV15flLgecmk6NCA" charset="utf-8"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Arvo:700|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" charset="utf-8"></script>
+
 </head>
 
+</div>
 <body>
   <header>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -45,79 +49,212 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <div id="map-canvas"></div>
+
+    <div class="row" id="thumbnails">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="http://www.amritayoga.it/wordpress/wp-content/uploads/2012/03/image-390x260.jpeg" alt="yoga">
+          <div class="caption">
+            <h3>Yoga: body and mind</h3>
+            <p>Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque at purus vel metus malesuada elementum vestibulum id lorem.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Save</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="https://www.thebmc.co.uk/Handlers/ArticleImageHandler.ashx?id=6120&index=0&w=605&h=434" alt="rock climbing">
+          <div class="caption">
+            <h3>Rock Climbing Malham Cove</h3>
+            <p>Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque at purus vel metus malesuada elementum vestibulum id lorem.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Save</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="http://photos3.meetupstatic.com/photos/event/1/0/2/b/600_442324139.jpeg" alt="hiking">
+          <div class="caption">
+            <h3>The Many Benefits of Hiking</h3>
+            <p>Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque at purus vel metus malesuada elementum vestibulum id lorem.</p>
+            <p><a href="#" class="btn btn-primary" role="button">Save</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <h1> Sign up to our newsletter</h1>
+      <p>Our regular e-newsletter is a great way to stay in touch with our work and everything that's going on at Sustrans.
+        Sign up below to hear about our latest news, views, events, campaigns, policy, impacts and other activities.</p>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign up!</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer-distributed">
+      <div class= "footer-left">
+        <h3>Outdoorsy London<span><img src="/images/badge.png"></span></h3>
+        <p class = "footer-links">
+          <a href="#">Home</a>
+
+          ·
+
+          <a href="#">Blog</a>
+
+          ·
+
+          <a href="#">Pricing</a>
+
+          ·
+
+          <a href="#">About</a>
+
+          ·
+
+          <a href="#">Faq</a>
+
+          ·
+
+          <a href="#">Contact</a>
+
+          ·
+
+        </p>
+        <p class="footer-company-name">Outdoorsy London © 2016</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>
+            <span>21 Baker Street</span>
+            "London, England"
+          </p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p> +44 7780007952</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p>
+            <a href="mailto:support@outdoorsy.com">support@outdoorsylondon.com</a>
+          </p>
+        </div>
+      </div>
+      <div class-"footer-night">
+        <p class="footer-company-about">
+          <span>About Outdoorsy</span>
+          "
+          Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          "
+        </p>
+        <div class="footer-icons">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
 
     <!-- Register Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Register</h4>
           </div>
-          <div class="input">
-            <form action="/register" method="post">
-              <h3>Sing up to access the best outdoorsy activities in London!</h3>
+          <form method="post" action="/register">
+            <div class="modal-body">
               <div class="form-group">
-                <label for="inputEmail3">Username</label>
-                <input type="text" name="user[username]" class="form-control" id="inputEmail3" placeholder="Username">
-              </div>
-              <div class="form-group">
-                <label for="inputEmail3">Email</label>
-                <input type="email" name="user[email]" class="form-control" id="inputEmail3" placeholder="Email">
+                <label for="user_username">Email address</label>
+                <input type="text" class="form-control" id="user_username" name="user[username]" placeholder="Username">
               </div>
               <div class="form-group">
-                <label for="inputPassword3">Password</label>
-                <input type="password" name="user[password]" class="form-control" id="inputPassword3" placeholder="Password">
+                <label for="user_email">Email address</label>
+                <input type="email" class="form-control" id="user_email" name="user[email]" placeholder="Email">
               </div>
               <div class="form-group">
-                <label for="inputPassword3">Password Confirmation</label>
-                <input type="password" name="user[passwordConfirmation]" class="form-control" id="inputPassword3" placeholder="Password">
+                <label for="user_password">Password</label>
+                <input type="password" class="form-control" id="user_password" name="user[password]" placeholder="Password">
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+              <div class="form-group">
+                <label for="user_passwordConfirmation">Confirm Password</label>
+                <input type="password" class="form-control" id="user_passwordConfirmation" name="user[passwordConfirmation]" placeholder="Confirm Password">
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Sign up to our monthly newsletter!
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> I accept terms and conditions of service
+                </label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <input type="submit" class="btn btn-primary submit-button" value="Register">
+            </div>
+          </form>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Login</h4>
           </div>
-          <div class="input">
-            <form action="/login" method="post">
-              <h3>Login</h3>
+          <form method="post" action="/login">
+            <div class="modal-body">
               <div class="form-group">
-                <label for="inputEmail3">Username</label>
-                <input type="email" name="email" class="form-control" id="inputEmail3" placeholder="Email">
+                <label for="email" class="control-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <label for="inputEmail3">Email</label>
-                <input type="password" name="password" class="form-control" id="inputEmail3" placeholder="Password">
+                <label for="password" class="control-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> Remember me
+                  </label>
+                </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <input type="submit" class="btn btn-primary submit-button" value="Register"></input>
+                <button type="button" class="btn btn-default btn-lg btn-block" data-dismiss="modal">Cancel</button>
+                <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign in">
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-  </main>
 
-</body>
-</html>
+  </body>
+  </html>

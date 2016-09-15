@@ -23,6 +23,7 @@ function authenticationsRegister(req, res) {
 function authenticationsLogin(req, res) {
   User.findOne({ email: req.body.email }, (err, user) => {
     if (err) return res.status(500).json({ message: "Something went wrong."});
+    // if (err) document.getElementByClass("alert alert-danger").innerHTML = "<div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></div>";
     if (!user || !user.validatePassword(req.body.password)) {
       return res.status(401).json({ message: "Sorry, unauthorized."});
     }
