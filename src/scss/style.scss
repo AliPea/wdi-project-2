@@ -15,6 +15,14 @@ body {
   font-family: $base-font;
 }
 
+div.info {
+  text-align: center;
+  img {
+    height: 200px;
+    width: auto;
+  }
+}
+
 header {
   height: 90px;
   padding: 10px 0;

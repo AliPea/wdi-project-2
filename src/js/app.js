@@ -80,34 +80,34 @@ Outdoorsy.loggedOutState = function(){
   $(".loggedIn").hide();
 };
 
-// Outdoorsy.getCurrentLocation = function() {
-//   navigator.geolocation.getCurrentPosition(function(position){
-//     let marker = new google.maps.Marker({
-//       position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-//       map: Outdoorsy.map,
-//       animation: google.maps.Animation.DROP,
-//       icon: {
-//         url: "http://furtaev.ru/preview/user_on_map_2_small.png",
-//         scaledSize: new google.maps.Size(56, 56)
-//       }
-//     });
-//
-//     Outdoorsy.map.setCenter(marker.getPosition());
-//   });
-// };
-//
-// Outdoorsy.addActivity = function() {
-//   event.preventDefault();
-//   $.ajax({
-//     method: "POST",
-//     url: "http://localhost:3000/api/activities",
-//     data: $(this).serialize()
-//   }).done(data => {
-//     console.log(data.activity);
-//     Outdoorsy.createMarkerForActivity(null, data.activity);
-//     $('form').reset().hide();
-//   });
-// };
+Outdoorsy.getCurrentLocation = function() {
+  navigator.geolocation.getCurrentPosition(function(position){
+    let marker = new google.maps.Marker({
+      position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+      map: Outdoorsy.map,
+      animation: google.maps.Animation.DROP,
+      icon: {
+        url: "http://furtaev.ru/preview/user_on_map_2_small.png",
+        scaledSize: new google.maps.Size(56, 56)
+      }
+    });
+
+    Outdoorsy.map.setCenter(marker.getPosition());
+  });
+};
+
+Outdoorsy.addActivity = function() {
+  event.preventDefault();
+  $.ajax({
+    method: "POST",
+    url: "http://localhost:3000/api/activities",
+    data: $(this).serialize()
+  }).done(data => {
+    console.log(data.activity);
+    Outdoorsy.createMarkerForActivity(null, data.activity);
+    $('form').reset().hide();
+  });
+};
 
 Outdoorsy.mapSetup = function() {
   let canvas = document.getElementById('map-canvas');
@@ -155,6 +155,8 @@ Outdoorsy.createMarkerForActivity = function(index, activity) {
     //   scaledSize: new google.maps.Size(56, 56)
     // }
   });
+
+
 
   this.addInfoWindowForActivity(activity, marker);
 };
