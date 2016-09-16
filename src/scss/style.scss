@@ -24,22 +24,23 @@ div.info {
 }
 
 header {
-  height: 90px;
+  height: 108px;
   padding: 10px 0;
   background: $red;
   background-image: url("../images/fabric.png");
 }
 
 .navbar {
-  margin: 0px;
+  margin: 12px;
 }
 
 .navbar-default {
   background: none;
   height: 72px;
+  width: 100%;
   color: $white;
-  border-top: 2px dashed $white;
-  border-bottom: 2px dashed $white;
+  border-top: 2px dotted $white;
+  border-bottom: 2px dotted $white;
   border-left: 0;
   border-right: 0;
   padding: 8px;
@@ -57,15 +58,14 @@ header {
     font-size: 32px;
 
     img {
-      max-height: 50px;
+      max-height: 90px;
       vertical-align: top;
       display: inline-block;
-      margin-top: -15px;
+      margin-top: -37px;
       margin-right: 8px;
       padding: 1px;
     }
   }
-
   .navbar-toggle {
     background: 0;
     color: black;
@@ -75,12 +75,26 @@ header {
       background-color: $white;
     }
   }
+  .navbar-inverse {
+    background: none;
+    height: 72px;
+    color: $brown;
+    border-top: 2px dashed $lightBrown;
+    border-bottom: 2px dashed $lightBrown;
+    border-left: 0;
+    border-right: 0;
+    padding: 5px;
+  }
+  div.form-group {
+    text-align: left;
+    float: left;
+  }
 }
 
 #map-canvas {
   height: 90vh;
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -111,6 +125,7 @@ header {
 
 .footer-distributed .footer-left {
 	width: 40%;
+  margin-left: 10px;
 }
 
 /* The company logo */
@@ -124,6 +139,11 @@ header {
 
 .footer-distributed h3 span {
 	color:  #5383d3;
+}
+
+.footer-distributed h3 span img {
+	height: 1vh;
+  width: 2%;
 }
 
 /* Footer links */
@@ -195,6 +215,7 @@ header {
 
 .footer-distributed .footer-right {
 	width: 20%;
+  text-align: right;
 }
 
 .footer-distributed .footer-company-about {
@@ -234,8 +255,6 @@ header {
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 880px) {
 
 	.footer-distributed{
@@ -251,8 +270,7 @@ header {
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
-
 }

@@ -140,7 +140,7 @@ Outdoorsy.createMarkerForActivity = function(index, activity) {
   let latlng = new google.maps.LatLng(activity.lat, activity.lng);
 
   let icon = {
-    url: "/images/badge.png", // url
+    url: "/images/map-marker.png", // url
     scaledSize: new google.maps.Size(34.95, 40), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor

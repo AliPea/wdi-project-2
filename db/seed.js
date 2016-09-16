@@ -438,39 +438,216 @@ const activities = [
     lng: "-0.0213506",
     type: "run"
   },
-//   {
-//     name: "Mile End Climbing Wall",
-//     image: "https://pbs.twimg.com/media/CPw7CQgW8AAn44e.jpg",
-//     description: "Mile End Climbing Wall offers bouldering, top-rope climbing and lead climbing, with around 16,000 square feet of climbing surface. It has its own route setting blog to let climbers know when changes are on the way. It also houses the ‘Monkey House’, where bouldering routes cross the ceiling and require plenty of hanging around.",
-//     information: "http://londonist.com/2014/03/where-to-go-climbing-the-best-centres-in-london",
-//     lat:
-//     lng:
-//     type: "rock-climb"
-//
-//   }
-//   {
-//     name:
-//     image:
-//     description:
-//     information:
-//     lat:
-//     lng:
-//     type: "rock-climb"
-//
-//   }
-//   {
-//     name:
-//     image:
-//     description:
-//     information:
-//     lat:
-//     lng:
-//     type: "rock-climb"
-//
-//   }
-//
-//
-//
+  {
+    name: "Mile End Climbing Wall",
+    image: "https://pbs.twimg.com/media/CPw7CQgW8AAn44e.jpg",
+    description: "Mile End Climbing Wall offers bouldering, top-rope climbing and lead climbing, with around 16,000 square feet of climbing surface. It has its own route setting blog to let climbers know when changes are on the way. It also houses the ‘Monkey House’, where bouldering routes cross the ceiling and require plenty of hanging around.",
+    information: "http://londonist.com/2014/03/where-to-go-climbing-the-best-centres-in-london",
+    lat: "51.5181983",
+    lng: "0.0718778",
+    type: "rock-climb"
+
+  },
+  {
+    name: "Castle Climbing Centre",
+    image: "https://www.castle-climbing.co.uk/sites/default/files/CastleGardenParty_28.jpg",
+    description: "The Castle is a dedicated climbing centre run by climbers for climbers and is one of the premier centres in Europe. Since it first opened its doors to the public in October 1995 the Castle has grown, and is still growing! The centre is now spread over 5 floors...with more yet to come.",
+    information: "https://www.castle-climbing.co.uk/the-centre",
+    lat: "51.5670951",
+    lng: "0.0964254",
+    type: "cycling"
+
+  },
+  {
+    name: "Arch Climbing Wall: The Biscuit",
+    image: "http://static1.squarespace.com/static/57094bcf7da24f23cead1070/570a61b95559863dc76225ac/57d6cfed2109d3ffe96c4ef6/1473696196427/?format=750w <%22>",
+    description: "3 unique London venues. 1 membership",
+    information: " http://www.archclimbingwall.com/#intro",
+    lat: "51.494355",
+    lng: "0.0645607",
+    type: "rock-climb"
+
+  },
+  {
+    name: "Lee Valley VeloPark",
+    image: "http://www.cyclingrevolution.com/images/1240/620/0/100/resize/revolution-series-to-be-streamed-over-facebook-live.jpg",
+    description: "Welcome to Lee Valley Regional Park Authority’s website, where you will find information on what we do and how we are run. To start planning your trip to the Lee Valley, including information on our venues, open spaces, events and more go to",
+    information: "https://www.visitleevalley.org.uk/en/content/cms/london2012/velo-park/",
+    lat: "51.550659",
+    lng: "0.015266",
+    type: "cycling"
+
+  },
+  {
+    name: "Prudential RideLondon",
+    image: " https://d1ffaecguugkl4.cloudfront.net/ridelondon/live/uploads/section_blocks/2c41f2d7520d8c459d486aa366cf163a7c16/i960x340.jpg",
+    description: " A true legacy of the 2012 Games: Developed by the Mayor of London and his agencies in 2013, Prudential RideLondon is a world-class festival of cycling. The fourth edition will take place over the weekend of 29-31 July 2016.",
+    information: "https://www.prudentialridelondon.co.uk/Lat: 51.550659",
+    lat: "51.5063118",
+    lng: "0.1050782",
+    type: "cycling"
+
+  },
+  {
+    name: " London by Bike",
+    image: " http://www.toimg.net/managed/images/10202339/w799/h468/image.jpg",
+    description: "Time Out's staff show you the best cycling rides in the capital",
+    information: "https://www.prudentialridelondon.co.uk/Lat: 51.550659",
+    lat: "51.5373801",
+    lng: " 0.0449655",
+    type: "cycling"
+  },
+
+  {
+    name: "Green Park",
+    image: "http://www.hotel-r.net/im/hotel/gb/green-park-6.jpg",
+    description: "",
+    information: "",
+    lat: "51.504445",
+    lng: "-0.1346856",
+    type: "walk"
+
+  },
+  {
+    name: "Hyde Park",
+    image: "http://cdn.londonandpartners.com/asset/0af62e0707b0ab0e58a4835f5f099dd3.jpg",
+    description: "",
+    information: "",
+    lat: "51.5072682",
+    lng: "-0.167919",
+    type: "walk"
+
+  },
+  {
+    name: "St James's Park",
+    image: "http://l7.alamy.com/zooms/487b7c010c0746bc80beef0c4cb94b10/spring-flowers-in-st-james-park-london-england-uk-ate0c4.jpg",
+    description: "",
+    information: "",
+    lat: "51.5024597",
+    lng: "-0.1369996",
+    type: "walk"
+
+  },
+  {
+    name: "Regent's Park",
+    image: "http://www.beenthere-donethat.org.uk/images.big/london-regentspark030big.jpg",
+    description: "",
+    information: "",
+    lat: "51.5312705",
+    lng: "-0.1591581",
+    type: "walk"
+
+  },
+  {
+    name: "Battersea Park",
+    image: "https://media-cdn.tripadvisor.com/media/photo-s/01/44/d8/80/battersea-park.jpg",
+    description: "",
+    information: "",
+    lat: "51.4791075",
+    lng: "-0.1586868",
+    type: "walk"
+
+  },
+  {
+    name: "Victoria Park",
+    image: "http://www.leicesteruk.info/LeicesterPICS/VictoriaPark.jpg",
+    description: "",
+    information: "",
+    lat: "51.5338385",
+    lng: "-0.0438492",
+    type: "walk"
+
+  },
+  {
+    name: "Bushy Park",
+    image: "http://www.city-runs.co.uk/images/sized/img/routes/bushy_lead1_1-502x289.jpg",
+    description: "",
+    information: "",
+    lat: "51.416531",
+    lng: "-0.342006",
+    type: "rock-climb"
+
+  },
+  {
+    name: "Springfield Park",
+    image: "https://www.openplay.co.uk/uploads/254_537b13e92da80-500x_.jpg",
+    description: "",
+    information: "",
+    lat: "51.5716",
+    lng: "-0.0600805",
+    type: "walk"
+
+  },
+  {
+    name: "Tower Hamlets Cemetery Park",
+    image: "http://www.opensquares.org/images/towerhamlets.jpg",
+    description: "",
+    information: "",
+    lat: "51.5233473",
+    lng: "-0.0294439",
+    type: "walk"
+
+  },
+  {
+    name: "Mudchute Park",
+    image: "http://www.imvisitinglondon.com/Images/Mudchute%201%20ws.jpg",
+    description: "",
+    information: "",
+    lat: "51.4921",
+    lng: "-0.0126027",
+    type: "walk"
+
+  },
+  {
+    name: "Chatsworth Road, Hackney",
+    image: "https://i.guim.co.uk/img/static/sys-images/Observer/Columnist/Columnists/2012/7/4/1341411408307/chatsworth-market-008.jpg?w=620&q=55&auto=format&usm=12&fit=max&s=e52b050962456681de61995f4fb7fd72",
+    description: "",
+    information: "",
+    lat: "51.5566543",
+    lng: "-0.0486018",
+    type: "walk"
+
+  },
+  {
+    name: "Stratford to Limehouse",
+    image: "http://www.imvisitinglondon.com/Images/Limehouse%20Cut%204%20ws.jpg",
+    description: "",
+    information: "",
+    lat: "51.5317067",
+    lng: "-0.0529705",
+    type: "walk"
+
+  },
+  {
+    name: "Clapham Common",
+    image: "http://static.panoramio.com/photos/original/10001110.jpg",
+    description: "",
+    information: "",
+    lat: "51.4578309",
+    lng: "-0.1503539",
+    type: "walk"
+
+  },
+  {
+    name: "Thames Barrier Park",
+    image: "https://c2.staticflickr.com/4/3579/3357483549_f6a6eca241_z.jpg?zz=1",
+    description: "",
+    information: "",
+    lat: "51.5009",
+    lng: "0.0326299",
+    type: "walk"
+
+  },
+  {
+    name: "Jesus Green",
+    image: "http://www.rtaylor.co.uk/images/jesus-green-plane-avenue.jpg",
+    description: "",
+    information: "",
+    lat: "52.2115081",
+    lng: "0.1207149",
+    type: "walk"
+
+  },
 ];
 
 activities.forEach(activity => {

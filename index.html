@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>OL</title>
+  <title>OutdoorsyLondon</title>
+  <link rel="icon" href="/images/badge.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- Latest compiled and minified CSS -->
@@ -18,9 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Arvo:700|Slabo+27px" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
   <script src="/js/app.js" charset="utf-8"></script>
-
 </head>
-
 </div>
 <body>
   <header>
@@ -36,7 +35,6 @@
           </button>
           <a class="navbar-brand" href="#"><img src="/images/badge.png">Outdoorsy London</a>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
@@ -47,8 +45,66 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-  </header>
+    <!--  new mini nav bar-->
+    <!-- <nav class="navbar navbar-inverse">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </nav>
+  </header> -->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Home</a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Hikes<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Runs</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cycle Routes <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!-- map -->
   <main class="container">
     <div id="map-canvas"></div>
 
@@ -103,7 +159,8 @@
     </main>
     <footer class="footer-distributed">
       <div class= "footer-left">
-        <h3>Outdoorsy London<span><img src="/images/badge.png"></span></h3>
+        <h3>Outdoorsy London <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span></h3>
+
         <p class = "footer-links">
           <a href="#">Home</a>
 
@@ -132,6 +189,7 @@
         </p>
         <p class="footer-company-name">Outdoorsy London © 2016</p>
       </div>
+
       <div class="footer-center">
         <div>
           <i class="fa fa-map-marker"></i>
@@ -151,12 +209,10 @@
           </p>
         </div>
       </div>
-      <div class-"footer-night">
+      <div class-"footer-right">
         <p class="footer-company-about">
           <span>About Outdoorsy</span>
-          "
-          Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          "
+          "Fusce dictum tristique tristique. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
         </p>
         <div class="footer-icons">
           <a href="#">
