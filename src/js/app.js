@@ -1,9 +1,9 @@
 const Outdoorsy = Outdoorsy || {};
 
-Outdoorsy.api_url = "http://localhost:3000/api";
+Outdoorsy.api_url = `${window.location.origin}/api`;
 
 Outdoorsy.init = function() {
-  this.apiUrl = "http://localhost:3000/api";
+  this.apiUrl = `${window.location.origin}/api`;
   this.mapSetup();
   this.eventListeners();
 
@@ -87,7 +87,7 @@ Outdoorsy.getCurrentLocation = function() {
       map: Outdoorsy.map,
       animation: google.maps.Animation.DROP,
       icon: {
-        url: "http://furtaev.ru/preview/user_on_map_2_small.png",
+        url: "/images/user_on_map_2_small.png",
         scaledSize: new google.maps.Size(56, 56)
       }
     });
@@ -100,7 +100,7 @@ Outdoorsy.addActivity = function() {
   event.preventDefault();
   $.ajax({
     method: "POST",
-    url: "http://localhost:3000/api/activities",
+    url: `${window.location.origin}/api/activities`,
     data: $(this).serialize()
   }).done(data => {
     console.log(data.activity);

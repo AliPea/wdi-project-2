@@ -152,3 +152,11 @@ gulp.task("default", [
   'watch',
   'nodemon'
 ]);
+
+gulp.task("deploy", [
+  'clean:public',
+  'bower',
+  'sass',
+  'copy',
+  'scripts'
+]);
